@@ -49,7 +49,7 @@
  //Main program starts here
  int main(int argc, char *argv[])
  {
-    //Checking wheather the user given comment arguments or not
+    // Checking whether the user has provided command-line arguments
     if(argc < 2)
     {
         printf("Enter the command-line arguments properly\n");//Displaying error message
@@ -59,14 +59,33 @@
     //Checking the user choice 
     if(strcmp(argv[1], "-v") == 0)
     {
+        //Validates the CLA count
+        if(argc != 3)
+        {
+            printf("Invalid input\n"); //Displaying error message
+            return 0;
+        }
         printf("View option is selected\n"); //User choose view option
     }
     else if(strcmp(argv[1], "-e") == 0)
     {
+        //Validates the CLA count
+        if(argc != 5)
+        {
+            printf("Invalid input\n"); //Displaying error message
+            return 0;
+        }
         printf("Edit option is selected\n"); //User choose Edit option
     }
     else if(strcmp(argv[1], "-h") == 0)
     {
+        
+        //Validates the CLA count
+        if(argc != 2)
+        {
+            printf("Invalid input\n"); //Displaying error message
+            return 0;
+        }
         printf("Help option is selected\n"); //User choose Help option
     }
     else
