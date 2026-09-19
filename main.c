@@ -52,22 +52,22 @@
     //Checking wheather the user given comment arguments or not
     if(argc < 2)
     {
-        printf("Enter the Comment arguments properly\n"); //Displaying error message
+        printf("Enter the command-line arguments properly\n");//Displaying error message
         return 0;
     }
 
     //Checking the user choice 
     if(strcmp(argv[1], "-v") == 0)
     {
-        printf("View option is selectetd\n"); //User choose view option
+        printf("View option is selected\n"); //User choose view option
     }
     else if(strcmp(argv[1], "-e") == 0)
     {
-        printf("Edit option is selectetd\n"); //User choose Edit option
+        printf("Edit option is selected\n"); //User choose Edit option
     }
     else if(strcmp(argv[1], "-h") == 0)
     {
-        printf("Help option is selectetd\n"); //User choose Help option
+        printf("Help option is selected\n"); //User choose Help option
     }
     else
     {
